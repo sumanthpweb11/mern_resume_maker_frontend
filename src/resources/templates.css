@@ -1,0 +1,33 @@
+ /* TEMPLATE 1*/
+
+ .template1-parent{
+  color: rgb(0, 0, 0.699);
+  padding: 100px;
+ }
+
+
+.template1-parent h1{
+   font-size: 30px;
+   font-weight: semi-bold;
+   color: rgb(0, 0, 0.699);
+   
+}
+
+.template1-parent h3{
+  font-size: 22px;
+  font-weight: bold;
+  
+  
+}
+
+
+.template1-parent p{
+  padding-top: 0 !important;
+  margin-top: 0px !important;
+  font-size:18px;
+}
+
+.template1-parent h6 {
+  margin-top: -6px !important;
+  padding: 0 !important;
+}
