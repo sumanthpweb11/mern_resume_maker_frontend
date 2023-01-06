@@ -2,7 +2,7 @@
   height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 20px 50px;
 }
 
@@ -18,7 +18,6 @@
 
 .header button {
   border: 1px solid black !important;
-  
 }
 
 .header h2 {
@@ -27,19 +26,14 @@
   cursor: pointer;
 }
 
-.header h2:hover{
+.header h2:hover {
   color: #ffffff;
   transition: all;
-  
-  
 }
-
-
-
 
 .content {
   height: 85%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-top: 10px;
   border-radius: 5px;
   padding: 10px;
@@ -47,9 +41,7 @@
   overflow-x: hidden;
 }
 
- 
-  /*SCROLL BAR*/
-
+/*SCROLL BAR*/
 
 ::-webkit-scrollbar {
   width: 7px;
