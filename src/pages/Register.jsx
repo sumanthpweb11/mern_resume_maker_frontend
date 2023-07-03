@@ -11,7 +11,7 @@ function Register() {
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      await axios.post("api/user/register", values);
+      await axios.post(`${process.env.REACT_APP_API_URL}/register`, values);
       setLoading(false);
       message.success("Registration successfull");
       navigate("/login");

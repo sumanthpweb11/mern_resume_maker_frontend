@@ -9,7 +9,10 @@ function Login() {
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      const user = await axios.post("api/user/login", values);
+      const user = await axios.post(
+        `${process.env.REACT_APP_API_URL}/login`,
+        values
+      );
       message.success("Login successfull");
       localStorage.setItem("resume-user", JSON.stringify(user.data));
       setLoading(false);

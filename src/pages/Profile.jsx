@@ -15,10 +15,13 @@ const Profile = () => {
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      const result = await axios.post("api/user/update", {
-        ...values,
-        _id: user._id,
-      });
+      const result = await axios.post(
+        `${process.env.REACT_APP_API_URL}/update`,
+        {
+          ...values,
+          _id: user._id,
+        }
+      );
       localStorage.setItem("resume-user", JSON.stringify(result.data));
       setLoading(false);
       message.success("Update successfull");
