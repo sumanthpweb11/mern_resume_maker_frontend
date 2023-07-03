@@ -16,7 +16,7 @@ const Profile = () => {
     setLoading(true);
     try {
       const result = await axios.post(
-        `${process.env.REACT_APP_API_URL}/update`,
+        `${process.env.REACT_APP_API_URL}/api/user/update`,
         {
           ...values,
           _id: user._id,
